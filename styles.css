@@ -1,0 +1,102 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+ul.navlist {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+    order: -1;
+    position: relative;
+    top: 70px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    gap: 11rem;
+
+}
+
+.searchBox {
+    position:relative;
+    top:70px;
+}
+
+input[type="text"] {
+    height: 21px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: white;
+}
+
+body {
+    font-family: Segoe UI;
+    margin: 0;
+}
+
+header {
+    /* position: relative; */
+    padding-bottom: 11rem;
+    /* display: flex; */
+    flex-flow: row;
+    /* width: max-content; */
+    height:100px
+}
+
+.sticky {position:fixed;
+           top:0;
+           width:100%
+        }
+        
+.sticky + .content {
+    padding-top: 102px;
+}
+
+header h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+
+.homepic {
+    position: relative;
+}
+
+.homepic img {
+    width: 100%;
+    /* position: absolute; */
+}
+
+.homepic h1 {
+    position: absolute;
+    color: white;
+    /* top: 264px; */
+    /* left: 74px; */
+    font-size: 3rem;
+}
+
+h1.left {
+    position: absolute;
+    top: 179px;
+    left: 87px;
+}
+
+h1.right {
+    position: absolute;
+    top: 438px;
+    left: 1007px;
+}

@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaraCara Ceramics</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css"> 
 </head>
 
 <body>
-    <header>
+    <header class="Header" id="myHeader">
         <nav>
-            <h2>Cara <img src= "./Assets/icons8-pottery-96.png"> Cara</h2>
-            
-            <ul>
-                <li><h3><a href="https://www.w3schools.com">HOME <a/></h3></li>
-                <li><h3><a href="https://www.w3schools.com">ABOUT <a/></h3></li>
-                <li><h3><a href="https://www.w3schools.com">PRODUCTS <a/></h3></li>
-                <li><h3><a href="https://www.w3schools.com">CONTACT <a/></h3></li>
+            <a href="#Home"><div>
+            <h2>Cara <img src= "./Assets/icons8-pottery-96.png">Cara</h2>
+            </div></a>
+            <ul class="navlist">
+                <li><a href="#Home">HOME </a></li>
+                <li><a href="#About">ABOUT </a></li>
+                <li><a href="#Products">PRODUCTS </a></li>
+                <li><a href="#Contact">CONTACT </a></li>
             </ul>
-            <input> 
+          
             <!-- <img src ="./Assets/1200px-Google_Magnifying_Glass.svg.png"> -->
-
-            <p>Cart <span>(0)</span> </p>
+            
+            <div class="searchBox">
+                <input type="text" placeholder="Search"> <a>Cart<span>(0)</span> </a>
+            </div>
         </nav>
     </header>
     <main>
-        <Section class= "home">
-            <h1>CERAMICS CRAFTED BY HAND...</h1>
-            <h1>FROM THE GROUND UP</h1>
+        <Section class= "home" id="Home">
+            <div class="homepic">
+            <h1 class="left"'>CERAMICS<br> CRAFTED BY<br> HAND...</h1>
+            <h1 class="right">...FROM THE<br> GROUND UP</h1>
             <img src="./Assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg">
+            </div>
         </Section>
-        <section class="About">
+        <section id="About" class="About">
             <h1>ABOUT US</h1> 
             <hr> 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
@@ -40,83 +45,86 @@
             <img src="./Assets/Cylinder_unglazed3_2048x2048.jpg">
             <img src="./Assets/Vase_Dame_2048x2048.jpg">
         </section> 
-        <section class="Products">
+        <section id="Products" class="Products">            
             <h1>OUR PRODUCTS</h1>
             <hr>
-            <div class="product">
-                <h2 class="Product Title">MUNDO BOWLS <span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-7HuTGlUfQSo-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">NATUREZA VASE<span class="price">$48.00</span></h2>
-                <img src="./Assets/oriento-maVIpNNtmlQ-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">FEIRA BOWLS<span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-bgIO-u4GEfI-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">NATUREZA POTS<span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-3uwu5K0RtaE-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">PEDRA VASE<span class="price">$48.00</span></h2>
-                <img src="./Assets/linh-le-a0rE64YJDA4-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">VIAJA POTS<span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-oiZAQvxTcYQ-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">SERVIÇO PLATES<span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-YA2E3d7a9Wo-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">CAMPEÃO VASE <span class="price">$48.00</span></h2>
-                <img src="./Assets/oriento-l0ah3UBLppo-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="product">
-                <h2 class="Product Title">TROCA BOWLS<span class="price">$48.00</span></h2>
-                <img src="./Assets/tom-crew-SITGdvztUdg-unsplash.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
-                </p>
-                <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a></h3>
-                <button class="addToCart">ADD TO CART</button>
+            <div class="ProductGrid">
+                <a><div class="product">
+                    <h2 class="Product Title">MUNDO BOWLS<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-7HuTGlUfQSo-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE</a> 
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">NATUREZA VASE<span class="price">$48.00</span></h2>
+                    <img src="./Assets/oriento-maVIpNNtmlQ-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">FEIRA BOWLS<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-bgIO-u4GEfI-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">NATUREZA POTS<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-3uwu5K0RtaE-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">PEDRA VASE<span class="price">$48.00</span></h2>
+                    <img src="./Assets/linh-le-a0rE64YJDA4-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">VIAJA POTS<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-oiZAQvxTcYQ-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">SERVIÇO PLATES<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-YA2E3d7a9Wo-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">CAMPEÃO VASE <span class="price">$48.00</span></h2>
+                    <img src="./Assets/oriento-l0ah3UBLppo-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"><a href='https://www.google.com/'>LEARN MORE </a>
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
+                <a><div class="product">
+                    <h2 class="Product Title">TROCA BOWLS<span class="price">$48.00</span></h2>
+                    <img src="./Assets/tom-crew-SITGdvztUdg-unsplash.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officia optio aliquid harum voluptate? Numquam deserunt explicabo voluptatem doloribus autem illum, sapiente, quidem, eaque ipsa eligendi quis sint dolorum alias.
+                    </p>
+                    <h3 class="learnMore"> <a href='https://www.google.com/'>LEARN MORE </a> 
+                    <button class="addToCart">ADD TO CART</button>
+                </div></a>
             </div>
         </section>
-        <section class="contact">
+
+        <section id="Contact" class="contact">
             <h1>CONTACT US</h1>
             <HR>
                 <h2>EMAIL</h2>
@@ -137,4 +145,24 @@
         <p>&copy; Copyright 2015-2020</p>
     </footer>
 </body>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </html>
