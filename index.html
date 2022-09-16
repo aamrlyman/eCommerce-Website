@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaraCara Ceramics</title>
-    <link rel="stylesheet" href="./styles.css"> 
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./app.js"></script> 
 </head>
 
 <body>
-    <header class="Header" id="myHeader">
+    <header class="header" id="myHeader">
         <nav>
             <a href="#Home"><div>
             <h2>Cara <img src= "./Assets/icons8-pottery-96.png">Cara</h2>
@@ -20,14 +21,15 @@
                 <li><a href="#Products">PRODUCTS </a></li>
                 <li><a href="#Contact">CONTACT </a></li>
             </ul>
-          
             <!-- <img src ="./Assets/1200px-Google_Magnifying_Glass.svg.png"> -->
             
             <div class="searchBox">
                 <input type="text" placeholder="Search"> <a>Cart<span>(0)</span> </a>
             </div>
-        </nav>
+        </nav>    
+    <hr class="header">
     </header>
+    
     <main>
         <Section class= "home" id="Home">
             <div class="homepic">
@@ -38,17 +40,19 @@
         </Section>
         <section id="About" class="About">
             <h1>ABOUT US</h1> 
-            <hr> 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
+            <hr class="about"> 
             <img src="./Assets/Cylinder_unglazed3_2048x2048.jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
             <img src="./Assets/Vase_Dame_2048x2048.jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam eius delectus ullam qui! Placeat, cupiditate. Nam illum quos beatae atque vitae. Nisi dolorem debitis quis, facere nam nemo maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laborum iure exercitationem aliquam ratione quisquam, maiores repellat nobis quis ipsam. Similique voluptatem inventore temporibus, laborum facere illum blanditiis ex aperiam.</p>
+            
+    
         </section> 
         <section id="Products" class="Products">            
             <h1>OUR PRODUCTS</h1>
             <hr>
-            <div class="ProductGrid">
+            <div class="grid-container">
                 <a><div class="product">
                     <h2 class="Product Title">MUNDO BOWLS<span class="price">$48.00</span></h2>
                     <img src="./Assets/tom-crew-7HuTGlUfQSo-unsplash.jpg">
@@ -145,24 +149,4 @@
         <p>&copy; Copyright 2015-2020</p>
     </footer>
 </body>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
 </html>
